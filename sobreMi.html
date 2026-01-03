@@ -65,7 +65,7 @@
 
 <body class="bg-bone text-charcoal font-display overflow-x-hidden antialiased">
     <div class="relative min-h-screen flex flex-col">
-        <header
+        <header id="main-header"
             class="absolute top-0 left-0 w-full z-50 border-b border-white/10 px-6 py-4 lg:px-20 transition-all duration-300">
             <div class="flex items-center justify-between mx-auto max-w-[1400px]">
                 <div class="flex items-center gap-3 text-white">
@@ -74,23 +74,44 @@
                     </div>
                     <h2 class="text-white text-lg font-bold tracking-tight uppercase">Erick Guzmán</h2>
                 </div>
+
                 <nav class="hidden md:flex items-center gap-8">
                     <a class="text-white/90 hover:text-terracota text-sm font-medium transition-colors"
                         href="index.html">Inicio</a>
-                    <a class="text-white hover:text-terracota text-sm font-bold transition-colors border-b border-terracota pb-0.5"
-                        href="sobreMi.html">Sobre Mi</a>
                     <a class="text-white/90 hover:text-terracota text-sm font-medium transition-colors"
+                        href="sobreMi.html">Sobre Mi</a>
+                    <a class="text-white hover:text-terracota text-sm font-bold transition-colors border-b border-terracota pb-0.5"
                         href="contacto.html">Contacto</a>
                 </nav>
+
                 <div class="flex items-center gap-4">
                     <button
                         class="hidden md:flex cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-terracota hover:bg-[#8f4f30] text-white text-sm font-bold tracking-wide transition-all shadow-lg hover:shadow-terracota/30">
                         <span class="truncate">Agenda una cita</span>
                     </button>
-                    <button class="md:hidden text-white">
+
+                    <button id="menu-open" class="md:hidden text-white p-2">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="fixed inset-0 bg-black/95 z-[60] flex flex-col items-center justify-center gap-8 transition-all duration-300 translate-x-full md:hidden">
+                <button id="menu-close" class="absolute top-6 right-6 text-white">
+                    <span class="material-symbols-outlined text-4xl">close</span>
+                </button>
+
+                <nav class="flex flex-col items-center gap-6">
+                    <a class="text-white text-2xl font-medium" href="index.html">Inicio</a>
+                    <a class="text-white text-2xl font-medium" href="sobreMi.html">Sobre Mi</a>
+                    <a class="text-white text-2xl font-bold text-terracota" href="contacto.html">Contacto</a>
+                </nav>
+
+                <button
+                    class="mt-4 cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-terracota text-white text-lg font-bold">
+                    Agenda una cita
+                </button>
             </div>
         </header>
         <main class="flex-grow flex flex-col">
@@ -311,11 +332,11 @@
                         <h4 class="text-xs font-bold uppercase tracking-[0.15em] text-terracota mb-6">Explorar</h4>
                         <ul class="space-y-4">
                             <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
-                                    href="#">Inicio</a></li>
+                                    href="index.html">Inicio</a></li>
                             <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
-                                    href="#">Sobre Mi</a></li>
+                                    href="sobreMi.html">Sobre Mi</a></li>
                             <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
-                                    href="#">Contacto</a></li>
+                                    href="contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="lg:col-span-4 lg:col-start-9">
@@ -345,7 +366,7 @@
                                     <span class="material-symbols-outlined text-terracota text-[20px] block">mail</span>
                                 </div>
                                 <a class="text-sm font-medium hover:text-terracota transition-colors"
-                                    href="mailto:contacto@mateobarragan.mx">contacto@erickguzman.mx</a>
+                                    href="mailto:contacto@mateobarragan.mx">contacto@mateobarragan.mx</a>
                             </li>
                         </ul>
                     </div>
@@ -359,7 +380,8 @@
                         <a class="text-stone hover:text-terracota text-xs font-medium transition-colors" href="#">Aviso
                             de Privacidad</a>
                         <a class="text-stone hover:text-terracota text-xs font-medium transition-colors"
-                            href="#">Términos y Condiciones</a>
+                            href="#">Términos y
+                            Condiciones</a>
                     </div>
                 </div>
             </div>
@@ -367,5 +389,32 @@
     </div>
 
 </body>
+<script>
+    const menuOpen = document.getElementById('menu-open');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Función para abrir el menú
+    menuOpen.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        // Opcional: Evitar que el fondo se mueva al hacer scroll
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Función para cerrar el menú
+    menuClose.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Cerrar menú si se hace click en un enlace (ideal para SPAs o anchors)
+    const navLinks = mobileMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = 'auto';
+        });
+    });
+</script>
 
 </html>
