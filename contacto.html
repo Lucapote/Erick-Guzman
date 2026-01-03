@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contacto - Erick Guzmán Arquitectos</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A65D3B", // Re-mapped to Terracota for generic classes
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        // Earth Palette
+                        "terracota": "#A65D3B",
+                        "bone": "#F5F2EB", // Blanco Hueso
+                        "charcoal": "#1A1A1A", // Negro Carbón
+                        "stone": "#707070", // Gris Piedra
+                        "sand": "#EFEBE3", // Arena
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F2EB;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #707070;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A65D3B;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .grayscale-map {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .grayscale-map:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+
+<body class="bg-bg text-charcoal font-display overflow-x-hidden antialiased">
+    <div class="relative min-h-screen flex flex-col">
+        <header
+            class="absolute top-0 left-0 w-full z-50 border-b border-white/10 px-6 py-4 lg:px-20 transition-all duration-300">
+            <div class="flex items-center justify-between mx-auto max-w-[1400px]">
+                <div class="flex items-center gap-3 text-white">
+                    <div class="flex items-center justify-center size-8 rounded-full bg-white/10 backdrop-blur-sm">
+                        <span class="material-symbols-outlined text-[20px]">architecture</span>
+                    </div>
+                    <h2 class="text-white text-lg font-bold tracking-tight uppercase">Erick Guzmán</h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-white/90 hover:text-terracota text-sm font-medium transition-colors"
+                        href="index.html">Inicio</a>
+                    <a class="text-white/90 hover:text-terracota text-sm font-medium transition-colors"
+                        href="sobreMi.html">Sobre Mi</a>
+                    <a class="text-white hover:text-terracota text-sm font-bold transition-colors border-b border-terracota pb-0.5"
+                        href="contacto.html">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden md:flex cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-terracota hover:bg-[#8f4f30] text-white text-sm font-bold tracking-wide transition-all shadow-lg hover:shadow-terracota/30">
+                        <span class="truncate">Agenda una cita</span>
+                    </button>
+                    <button class="md:hidden text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow flex flex-col">
+            <div class="relative w-full h-[40vh] min-h-[350px] bg-charcoal overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <div class="w-full h-full bg-cover bg-center"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZ0Mmf2pSYN9IQ3UePnzFxzGNyjzfrvLWX1lrGzeEwON63En3lbgNmj01dIrFf8ieLx-IkIjzzV2fY5_PSapvUcDXrfbFLzX77_qcklr9lwUmgWt_L9o8htQoz8eI55Qosb_wj_xe7FcPNmnUuTAt4BXhafFmSBx-iAWyyNh5Ech-HuwHov4UcRSiUEWNhfWYgTiFtDAamokrkedo2i98buWgykD_tvEDJFUUzpiPwDju1M6Usxm1pzCg0D2rKXufzZSjXFlKCN2MX"); opacity: 0.5;'>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-charcoal/30"></div>
+                </div>
+                <div class="relative z-10 h-full flex flex-col justify-end pb-12 px-6 lg:px-20 max-w-[1400px] mx-auto">
+                    <span
+                        class="text-terracota font-bold tracking-[0.2em] text-sm uppercase mb-4 animate-fade-in-up">Contacto</span>
+                    <h1 class="text-white text-4xl md:text-6xl font-black tracking-tight leading-tight max-w-3xl">
+                        Agenda una cita <br />
+                        <span class="text-white/70 font-light">y construyamos juntos.</span>
+                    </h1>
+                </div>
+            </div>
+            <section class="bg-background-light px-6 py-20 lg:px-20 relative z-10">
+                <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                    <div class="lg:col-span-7 order-2 lg:order-1">
+                        <div class="mb-10">
+                            <h3 class="text-charcoal text-2xl md:text-3xl font-bold tracking-tight mb-4">Empecemos una
+                                conversación</h3>
+                            <p class="text-stone text-lg font-light leading-relaxed">
+                                Complete el siguiente formulario para agendar una consulta inicial. Nos interesa conocer
+                                su visión y cómo podemos ayudarle a materializarla.
+                            </p>
+                        </div>
+                        <form class="space-y-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="relative group">
+                                    <label class="block text-xs font-bold text-charcoal uppercase tracking-wider mb-2"
+                                        for="name">Nombre Completo</label>
+                                    <input
+                                        class="w-full bg-transparent border-b border-stone/30 py-3 text-charcoal placeholder-stone/30 focus:outline-none focus:border-terracota transition-colors text-base"
+                                        id="name" placeholder="Juan Pérez" required="" type="text" />
+                                </div>
+                                <div class="relative group">
+                                    <label class="block text-xs font-bold text-charcoal uppercase tracking-wider mb-2"
+                                        for="phone">Teléfono</label>
+                                    <input
+                                        class="w-full bg-transparent border-b border-stone/30 py-3 text-charcoal placeholder-stone/30 focus:outline-none focus:border-terracota transition-colors text-base"
+                                        id="phone" placeholder="+52 (55) 0000 0000" type="tel" />
+                                </div>
+                            </div>
+                            <div class="relative group">
+                                <label class="block text-xs font-bold text-charcoal uppercase tracking-wider mb-2"
+                                    for="email">Correo Electrónico</label>
+                                <input
+                                    class="w-full bg-transparent border-b border-stone/30 py-3 text-charcoal placeholder-stone/30 focus:outline-none focus:border-terracota transition-colors text-base"
+                                    id="email" placeholder="juan@ejemplo.com" required="" type="email" />
+                            </div>
+                            <div class="relative group">
+                                <label class="block text-xs font-bold text-charcoal uppercase tracking-wider mb-2"
+                                    for="message">Mensaje</label>
+                                <textarea
+                                    class="w-full bg-transparent border-b border-stone/30 py-3 text-charcoal placeholder-stone/30 focus:outline-none focus:border-terracota transition-colors text-base resize-none"
+                                    id="message"
+                                    rows="4">Me gustaría agendar una cita para discutir mi proyecto de...</textarea>
+                            </div>
+                            <div class="pt-6">
+                                <button
+                                    class="w-full md:w-auto flex cursor-pointer items-center justify-center rounded-lg h-14 px-10 bg-terracota hover:bg-[#8f4f30] text-white text-base font-bold tracking-wide transition-all shadow-xl hover:shadow-terracota/30 transform hover:-translate-y-1"
+                                    type="submit">
+                                    <span>Enviar Solicitud</span>
+                                    <span class="material-symbols-outlined ml-2 text-xl">calendar_today</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-10">
+                        <div class="bg-bone p-8 md:p-10 rounded-xl border border-stone/10 backdrop-blur-sm">
+                            <h4 class="text-xs font-bold uppercase tracking-[0.15em] text-terracota mb-8">Información de
+                                Contacto</h4>
+                            <ul class="space-y-8">
+                                <li class="flex items-start gap-5 group">
+                                    <div
+                                        class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white text-terracota shadow-sm">
+                                        <span class="material-symbols-outlined text-[20px]">location_on</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="block text-charcoal font-bold text-sm uppercase tracking-wide mb-1">Dirección</span>
+                                        <span class="text-stone font-medium leading-relaxed">
+                                            Monte Cáucaso 915,<br />Lomas de Chapultepec,<br />11000 Ciudad de México
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="flex items-center gap-5 group">
+                                    <div
+                                        class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white text-terracota shadow-sm">
+                                        <span class="material-symbols-outlined text-[20px]">call</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="block text-charcoal font-bold text-sm uppercase tracking-wide mb-1">Teléfono</span>
+                                        <a class="text-stone font-medium hover:text-terracota transition-colors"
+                                            href="tel:+525512345678">+52 (55) 1234 5678</a>
+                                    </div>
+                                </li>
+                                <li class="flex items-center gap-5 group">
+                                    <div
+                                        class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white text-terracota shadow-sm">
+                                        <span class="material-symbols-outlined text-[20px]">mail</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="block text-charcoal font-bold text-sm uppercase tracking-wide mb-1">Email</span>
+                                        <a class="text-stone font-medium hover:text-terracota transition-colors"
+                                            href="mailto:contacto@mateobarragan.mx">contacto@erickguzman.mx</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden shadow-md border border-stone/10">
+                            <iframe allowfullscreen="" class="grayscale-map absolute inset-0" height="100%"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.536442654321!2d-99.20815342411996!3d19.43260768184695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20203f6e85769%3A0x6c6e755259972353!2sLomas%20de%20Chapultepec%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1715632123456!5m2!1ses!2smx"
+                                style="border:0;" width="100%"></iframe>
+                            <div
+                                class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-md shadow-sm pointer-events-none">
+                                <span class="text-xs font-bold text-charcoal uppercase tracking-wider">Ubicación del
+                                    Estudio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-bone text-charcoal pt-24 pb-12 border-t border-sand relative z-20">
+            <div class="max-w-[1400px] mx-auto px-6 lg:px-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16 mb-20">
+                    <div class="lg:col-span-5 flex flex-col items-start">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div
+                                class="flex items-center justify-center size-10 rounded-full bg-terracota text-white shadow-lg shadow-terracota/20">
+                                <span class="material-symbols-outlined text-[20px]">architecture</span>
+                            </div>
+                            <span class="text-xl font-bold uppercase tracking-tight text-charcoal">Erick Guzmán</span>
+                        </div>
+                        <p class="text-stone text-base leading-relaxed mb-8 max-w-md">
+                            Creando espacios atemporales que dialogan con su entorno y celebran la identidad mexicana
+                            contemporánea. Arquitectura con alma y propósito.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="group flex items-center justify-center w-11 h-11 rounded-full border border-stone/20 text-stone hover:bg-terracota hover:text-white hover:border-terracota transition-all duration-300 shadow-sm hover:shadow-md"
+                                href="#">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="group flex items-center justify-center w-11 h-11 rounded-full border border-stone/20 text-stone hover:bg-terracota hover:text-white hover:border-terracota transition-all duration-300 shadow-sm hover:shadow-md"
+                                href="#">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="group flex items-center justify-center w-11 h-11 rounded-full border border-stone/20 text-stone hover:bg-terracota hover:text-white hover:border-terracota transition-all duration-300 shadow-sm hover:shadow-md"
+                                href="#">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 lg:col-start-7">
+                        <h4 class="text-xs font-bold uppercase tracking-[0.15em] text-terracota mb-6">Explorar</h4>
+                        <ul class="space-y-4">
+                            <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
+                                    href="#">Inicio</a></li>
+                            <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
+                                    href="#">Sobre Mi</a></li>
+                            <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
+                                    href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-4 lg:col-start-9">
+                        <h4 class="text-xs font-bold uppercase tracking-[0.15em] text-terracota mb-6">Contacto</h4>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4 text-stone group">
+                                <div
+                                    class="bg-white p-2 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                                    <span
+                                        class="material-symbols-outlined text-terracota text-[20px] block">location_on</span>
+                                </div>
+                                <span class="text-sm font-medium leading-relaxed mt-1">
+                                    Monte Cáucaso 915, Lomas de Chapultepec,<br />11000 Ciudad de México
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-4 text-stone group">
+                                <div
+                                    class="bg-white p-2 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                                    <span class="material-symbols-outlined text-terracota text-[20px] block">call</span>
+                                </div>
+                                <a class="text-sm font-medium hover:text-terracota transition-colors"
+                                    href="tel:+525512345678">+52 (55) 1234 5678</a>
+                            </li>
+                            <li class="flex items-center gap-4 text-stone group">
+                                <div
+                                    class="bg-white p-2 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                                    <span class="material-symbols-outlined text-terracota text-[20px] block">mail</span>
+                                </div>
+                                <a class="text-sm font-medium hover:text-terracota transition-colors"
+                                    href="mailto:contacto@mateobarragan.mx">contacto@mateobarragan.mx</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-charcoal/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-stone text-xs font-medium">
+                        © 2024 Erick Guzmán. Todos los derechos reservados.
+                    </p>
+                    <div class="flex gap-8">
+                        <a class="text-stone hover:text-terracota text-xs font-medium transition-colors" href="#">Aviso
+                            de Privacidad</a>
+                        <a class="text-stone hover:text-terracota text-xs font-medium transition-colors"
+                            href="#">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

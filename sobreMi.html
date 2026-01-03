@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Historia y Visión - Erick Guzmán</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        // Updated Primary to Terracota based on new palette
+                        "primary": "#A65D3B",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        // New Earth Palette
+                        "terracota": "#A65D3B",
+                        "bone": "#F5F2EB", // Blanco Hueso
+                        "charcoal": "#1A1A1A", // Negro Carbón
+                        "stone": "#707070", // Gris Piedra
+                        "sand": "#EFEBE3", // Arena
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-bone text-charcoal font-display overflow-x-hidden antialiased">
+    <div class="relative min-h-screen flex flex-col">
+        <header
+            class="absolute top-0 left-0 w-full z-50 border-b border-white/10 px-6 py-4 lg:px-20 transition-all duration-300">
+            <div class="flex items-center justify-between mx-auto max-w-[1400px]">
+                <div class="flex items-center gap-3 text-white">
+                    <div class="flex items-center justify-center size-8 rounded-full bg-white/10 backdrop-blur-sm">
+                        <span class="material-symbols-outlined text-[20px]">architecture</span>
+                    </div>
+                    <h2 class="text-white text-lg font-bold tracking-tight uppercase">Erick Guzmán</h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-white/90 hover:text-terracota text-sm font-medium transition-colors"
+                        href="index.html">Inicio</a>
+                    <a class="text-white hover:text-terracota text-sm font-bold transition-colors border-b border-terracota pb-0.5"
+                        href="sobreMi.html">Sobre Mi</a>
+                    <a class="text-white/90 hover:text-terracota text-sm font-medium transition-colors"
+                        href="contacto.html">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden md:flex cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-terracota hover:bg-[#8f4f30] text-white text-sm font-bold tracking-wide transition-all shadow-lg hover:shadow-terracota/30">
+                        <span class="truncate">Agenda una cita</span>
+                    </button>
+                    <button class="md:hidden text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow flex flex-col">
+            <div class="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+                <div class="absolute inset-0 z-0">
+                    <div class="w-full h-full bg-cover bg-center bg-no-repeat"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZ0Mmf2pSYN9IQ3UePnzFxzGNyjzfrvLWX1lrGzeEwON63En3lbgNmj01dIrFf8ieLx-IkIjzzV2fY5_PSapvUcDXrfbFLzX77_qcklr9lwUmgWt_L9o8htQoz8eI55Qosb_wj_xe7FcPNmnUuTAt4BXhafFmSBx-iAWyyNh5Ech-HuwHov4UcRSiUEWNhfWYgTiFtDAamokrkedo2i98buWgykD_tvEDJFUUzpiPwDju1M6Usxm1pzCg0D2rKXufzZSjXFlKCN2MX");'>
+                    </div>
+                    <div class="absolute inset-0 bg-black/60"></div>
+                </div>
+                <div class="relative z-10 text-center px-6 max-w-4xl pt-20">
+                    <span
+                        class="text-terracota font-bold tracking-[0.2em] text-sm uppercase mb-4 block animate-fade-in-up">Nuestra
+                        Esencia</span>
+                    <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6">
+                        Historia y Visión
+                    </h1>
+                    <p class="text-white/80 text-lg md:text-xl font-light max-w-2xl mx-auto">
+                        Arquitectura que nace de la tierra y dialoga con el tiempo. Un viaje a través de la materia, el
+                        espacio y la luz.
+                    </p>
+                </div>
+            </div>
+            <section class="bg-bone py-24 px-6 lg:px-20 relative overflow-hidden">
+                <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative order-2 lg:order-1">
+                        <div class="relative z-10 overflow-hidden rounded-lg aspect-[3/4] shadow-2xl">
+                            <div class="w-full h-full bg-cover bg-center transform transition-transform duration-1000 hover:scale-105"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkv3Wo6QX5VHYbke2YVCCc5i3ZQ6--ezeVbK-uINB3swKZ-EGqLuqs2xvr8nJgwc_QtGddBkgx6wLdbKEhJfx8kahfiRyeV9idQ2qBVbcai0qpi-4Ooogp6n87RoO7oDypREVYbWCYtQTJlN2A4vMrGalzO7dijhSG5bpXaDwvYrk8eMVFwTYO5V2ohvZLz5QDir6vkACxVqMf2KkQLDpgYDxm6PYOESh_AOh2sUJlXEkb_wgXi5NqdqNOr715-tpaBBa3NUfo3Ize");'
+                                title="Retrato arquitectónico"></div>
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -left-8 w-2/3 h-2/3 border-2 border-terracota/20 -z-0 rounded-lg">
+                        </div>
+                        <div class="absolute -top-8 -right-8 w-32 h-32 bg-sand rounded-full mix-blend-multiply -z-0">
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h3
+                            class="text-terracota text-sm font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
+                            <span class="w-8 h-[1px] bg-terracota"></span>
+                            Sobre Mí
+                        </h3>
+                        <h2 class="text-charcoal text-4xl md:text-5xl font-bold mb-8 leading-tight">Erick Guzmán</h2>
+                        <div class="space-y-6 text-stone text-lg leading-relaxed font-light">
+                            <p>
+                                Soy un arquitecto apasionado por la reinterpretación de la herencia constructiva
+                                mexicana en un lenguaje contemporáneo. Con más de 15 años de experiencia, mi práctica se
+                                ha centrado en descubrir la poesía oculta en los materiales crudos y la luz natural.
+                            </p>
+                            <p>
+                                Mi trayectoria comenzó recorriendo las obras de los grandes maestros, entendiendo que la
+                                arquitectura no es solo refugio, sino un escenario para la vida. Cada proyecto es una
+                                búsqueda personal por crear espacios que ofrezcan serenidad y pertenencia en un mundo
+                                cada vez más acelerado.
+                            </p>
+                            <p>
+                                Creo en una arquitectura honesta, donde la estructura es la estética y donde cada muro
+                                tiene un propósito. Mis valores fundamentales son la integridad, el respeto profundo por
+                                el entorno natural y el compromiso con la calidad artesanal.
+                            </p>
+                        </div>
+                        <div class="mt-10">
+                            <div class="flex items-center gap-4">
+                                <img alt="Firma" class="h-12 opacity-60 invert hidden"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy-nFjxPuOrdu_T6nxl7m1tzicTmYRkZQ0MtkpCjRhvdHo4mhTAzbRtB9dsyTcYiAhfQYdqIqN8KakS9N0FMUu7fnYLkLNX7krJm-BGt_S0LMdRPaQA4w4VF9_5DcafkbziI8me1bWyCLR3Q-k8AnBD3bVjUlyZV_oE21DhmrV2zI550Pm99T9Nedf9qhduWjC2yimBFlNoftbjIP7UnRbwNLQc4NT8eilKE9G2lR5DJVFDX3GW1WMHFxYauxOq34z-UYzjO1Uun4-" />
+                                <span
+                                    class="font-display font-medium text-charcoal italic text-xl border-l-4 border-terracota pl-4">"Construimos
+                                    memorias a través del espacio."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-sand py-24 px-6 lg:px-20">
+                <div class="max-w-[1400px] mx-auto">
+                    <div class="text-center max-w-3xl mx-auto mb-20">
+                        <span
+                            class="text-terracota font-bold tracking-widest uppercase text-sm mb-3 block">Filosofía</span>
+                        <h2 class="text-charcoal text-4xl md:text-5xl font-bold mb-6">Visión de Diseño</h2>
+                        <p class="text-stone text-lg font-light leading-relaxed">
+                            Nuestra arquitectura busca la atemporalidad. Nos alejamos de las tendencias efímeras para
+                            arraigarnos en principios sólidos que garantizan que cada obra envejezca con dignidad y
+                            belleza.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-20">
+                        <div
+                            class="bg-bone p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-terracota/20">
+                            <div
+                                class="size-14 rounded-full bg-terracota/10 flex items-center justify-center text-terracota mb-8 group-hover:bg-terracota group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">light_mode</span>
+                            </div>
+                            <h3
+                                class="text-charcoal text-xl font-bold mb-4 group-hover:text-terracota transition-colors">
+                                Luz como Materia</h3>
+                            <p class="text-stone leading-relaxed">
+                                Esculpimos la luz natural como si fuera un material sólido. Entendemos cómo las sombras
+                                cambian el espacio a lo largo del día, creando atmósferas dinámicas y vivas.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-bone p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-terracota/20">
+                            <div
+                                class="size-14 rounded-full bg-terracota/10 flex items-center justify-center text-terracota mb-8 group-hover:bg-terracota group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">landscape</span>
+                            </div>
+                            <h3
+                                class="text-charcoal text-xl font-bold mb-4 group-hover:text-terracota transition-colors">
+                                Integración al Entorno</h3>
+                            <p class="text-stone leading-relaxed">
+                                Respetamos la topografía y la vegetación existente. Nuestra arquitectura no se impone;
+                                se posa y dialoga con el paisaje, borrando los límites entre interior y exterior.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-bone p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-terracota/20">
+                            <div
+                                class="size-14 rounded-full bg-terracota/10 flex items-center justify-center text-terracota mb-8 group-hover:bg-terracota group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">handyman</span>
+                            </div>
+                            <h3
+                                class="text-charcoal text-xl font-bold mb-4 group-hover:text-terracota transition-colors">
+                                Honestidad Material</h3>
+                            <p class="text-stone leading-relaxed">
+                                Utilizamos materiales en su estado puro: concreto aparente, madera, acero y piedra
+                                local. Valoramos la textura, la imperfección natural y la pátina del tiempo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-charcoal rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2">
+                            <div class="relative h-64 lg:h-auto">
+                                <div class="absolute inset-0 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsIfsxN8dwB5cEjT5iTsffjtis6WwXMrTHsOv0HwFib9VZcV3a9CMneoi0bZ8JetRO-pSYtjyB1q1tpUagTxkioXA6CJmE3A2pcXlGV7S78V4L14qVbrOVmzLlvjgkkO-wUNswDqH9ec0Kf676LtG8G3k1nqrZ0lQr79Mrp75NOmsGFx2F89v1e5Yoez5DCrlf4taA-uJHGxX0whSyK8BZ021oNPUXfmk3okcGZBKKo0j4YvBUbUO1gMydHYxh3H42qJxi7X2tv_At");'>
+                                </div>
+                                <div class="absolute inset-0 bg-black/20"></div>
+                            </div>
+                            <div class="p-10 lg:p-16 flex flex-col justify-center">
+                                <h3 class="text-white text-3xl font-bold mb-6">Enfoque Único</h3>
+                                <p class="text-gray-300 mb-8 leading-relaxed">
+                                    Cada cliente y cada sitio cuentan una historia diferente. Nuestro proceso de diseño
+                                    es colaborativo y profundamente analítico, resultando en soluciones arquitectónicas
+                                    que no solo resuelven necesidades funcionales, sino que elevan la calidad de vida
+                                    diaria.
+                                </p>
+                                <ul class="space-y-4 mb-8">
+                                    <li class="flex items-center gap-3 text-gray-300">
+                                        <span class="material-symbols-outlined text-terracota">check_circle</span>
+                                        <span>Diseño sustentable y bioclimático</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-gray-300">
+                                        <span class="material-symbols-outlined text-terracota">check_circle</span>
+                                        <span>Atención meticulosa al detalle</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-gray-300">
+                                        <span class="material-symbols-outlined text-terracota">check_circle</span>
+                                        <span>Gestión integral del proyecto</span>
+                                    </li>
+                                </ul>
+                                <button
+                                    class="self-start flex items-center gap-2 text-white font-bold border-b border-terracota pb-1 hover:text-terracota transition-colors">
+                                    Iniciar un proyecto
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-bone text-charcoal pt-24 pb-12 border-t border-sand relative z-20">
+            <div class="max-w-[1400px] mx-auto px-6 lg:px-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16 mb-20">
+                    <div class="lg:col-span-5 flex flex-col items-start">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div
+                                class="flex items-center justify-center size-10 rounded-full bg-terracota text-white shadow-lg shadow-terracota/20">
+                                <span class="material-symbols-outlined text-[20px]">architecture</span>
+                            </div>
+                            <span class="text-xl font-bold uppercase tracking-tight text-charcoal">Erick Guzmán</span>
+                        </div>
+                        <p class="text-stone text-base leading-relaxed mb-8 max-w-md">
+                            Creando espacios atemporales que dialogan con su entorno y celebran la identidad mexicana
+                            contemporánea. Arquitectura con alma y propósito.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="group flex items-center justify-center w-11 h-11 rounded-full border border-stone/20 text-stone hover:bg-terracota hover:text-white hover:border-terracota transition-all duration-300 shadow-sm hover:shadow-md"
+                                href="#">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="group flex items-center justify-center w-11 h-11 rounded-full border border-stone/20 text-stone hover:bg-terracota hover:text-white hover:border-terracota transition-all duration-300 shadow-sm hover:shadow-md"
+                                href="#">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="group flex items-center justify-center w-11 h-11 rounded-full border border-stone/20 text-stone hover:bg-terracota hover:text-white hover:border-terracota transition-all duration-300 shadow-sm hover:shadow-md"
+                                href="#">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 lg:col-start-7">
+                        <h4 class="text-xs font-bold uppercase tracking-[0.15em] text-terracota mb-6">Explorar</h4>
+                        <ul class="space-y-4">
+                            <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
+                                    href="#">Inicio</a></li>
+                            <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
+                                    href="#">Sobre Mi</a></li>
+                            <li><a class="text-stone hover:text-charcoal transition-colors font-medium text-sm"
+                                    href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-4 lg:col-start-9">
+                        <h4 class="text-xs font-bold uppercase tracking-[0.15em] text-terracota mb-6">Contacto</h4>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4 text-stone group">
+                                <div
+                                    class="bg-white p-2 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                                    <span
+                                        class="material-symbols-outlined text-terracota text-[20px] block">location_on</span>
+                                </div>
+                                <span class="text-sm font-medium leading-relaxed mt-1">
+                                    Monte Cáucaso 915, Lomas de Chapultepec,<br />11000 Ciudad de México
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-4 text-stone group">
+                                <div
+                                    class="bg-white p-2 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                                    <span class="material-symbols-outlined text-terracota text-[20px] block">call</span>
+                                </div>
+                                <a class="text-sm font-medium hover:text-terracota transition-colors"
+                                    href="tel:+525512345678">+52 (55) 1234 5678</a>
+                            </li>
+                            <li class="flex items-center gap-4 text-stone group">
+                                <div
+                                    class="bg-white p-2 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                                    <span class="material-symbols-outlined text-terracota text-[20px] block">mail</span>
+                                </div>
+                                <a class="text-sm font-medium hover:text-terracota transition-colors"
+                                    href="mailto:contacto@mateobarragan.mx">contacto@erickguzman.mx</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-charcoal/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-stone text-xs font-medium">
+                        © 2024 Erick Guzmán. Todos los derechos reservados.
+                    </p>
+                    <div class="flex gap-8">
+                        <a class="text-stone hover:text-terracota text-xs font-medium transition-colors" href="#">Aviso
+                            de Privacidad</a>
+                        <a class="text-stone hover:text-terracota text-xs font-medium transition-colors"
+                            href="#">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
